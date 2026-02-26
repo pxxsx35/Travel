@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Travel Drive</title>
+<link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+<div class="app">
+
+    <!-- HEADER -->
+<div class="top-bar">
+    <div class="logo">Travel Drive</div>
+    <div class="subtitle">Find your perfect stay</div>
+</div>
+
+    <!-- MAP -->
+<div class="fake-map">
+    <img src="map.png" alt="Map">
+
+    <!-- Overlay -->
+    <div class="map-overlay"></div>
+
+    <!-- Fake Marker -->
+    <div class="marker">📍</div>
+
+    <!-- Fake Controls -->
+    <div class="map-controls">
+        <button>+</button>
+        <button>−</button>
+    </div>
+</div>
+    <!-- HOTEL SECTION -->
+<div class="hotel-section">
+        <div class="section-title">
+            <h2>Recommended Hotels in Tha Sala</h2>
+        </div>
+
+        <div class="hotel-card" onclick="window.open('https://www.google.com/travel/search?q=Villa+Kani+Resort+%26+Restaurant&ts=CAESABoWEhQSEgoHCOoPEAIYHBIHCOoPEAMYASoHCgU6A1RIQg', '_blank')">
+            <div class="hotel-img">
+                <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b">
+                <span class="rating">4.6 ⭐</span>
+            </div>
+            <div class="hotel-info">
+                <h3>Villa Kani Resort & Restaurant</h3>
+                <p>Resort and dining in Tha Sala</p>
+                <div class="bottom">
+                    <span class="price">฿1,730 / night</span>
+                    <button onclick="event.stopPropagation(); window.open('https://www.google.com/travel/search?q=Villa+Kani+Resort+%26+Restaurant&ts=CAESABoWEhQSEgoHCOoPEAIYHBIHCOoPEAMYASoHCgU6A1RIQg', '_blank')">Book</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="hotel-card" onclick="window.open('https://www.google.com/travel/search?q=Wannachart+Boutique+Resort&ts=CAESABoWEhQSEgoHCOoPEAIYHBIHCOoPEAMYASoHCgU6A1RIQg', '_blank')">
+            <div class="hotel-img">
+                <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945">
+                <span class="rating">4.3 ⭐</span>
+            </div>
+            <div class="hotel-info">
+                <h3>Wannachart Boutique Resort</h3>
+                <p>Comfortable stay near Walailak University</p>
+                <div class="bottom">
+                    <span class="price">฿891 / night</span>
+                    <button onclick="event.stopPropagation(); window.open('https://www.google.com/travel/search?q=Wannachart+Boutique+Resort&ts=CAESABoWEhQSEgoHCOoPEAIYHBIHCOoPEAMYASoHCgU6A1RIQg', '_blank')">Book</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="hotel-card" onclick="window.open('https://www.google.com/travel/search?q=Chul+Boutique+Villa&ts=CAESABoWEhQSEgoHCOoPEAIYHBIHCOoPEAMYASoHCgU6A1RIQg', '_blank')">
+            <div class="hotel-img">
+                <img src="https://images.unsplash.com/photo-1540541338287-41700207dee6">
+                <span class="rating">4.7 ⭐</span>
+            </div>
+            <div class="hotel-info">
+                <h3>Chul Boutique Villa</h3>
+                <p>Private and stylish villa</p>
+                <div class="bottom">
+                    <span class="price">฿1,613 / night</span>
+                    <button onclick="event.stopPropagation(); window.open('https://www.google.com/travel/search?q=Chul+Boutique+Villa&ts=CAESABoWEhQSEgoHCOoPEAIYHBIHCOoPEAMYASoHCgU6A1RIQg', '_blank')">Book</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+<script src="main.js"></script>
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC0GC2rCWeMJkh_qNCq6wzE2hUrGx8khFk&callback=initMap">
+</script>
+<!-- Mobile + Desktop Navbar 🏠-->
+<div class="navbar">
+    <button onclick="window.location.href='mainCus.html'">
+        🗺️ <span>Hotel</span>
+    </button>
+
+    <button class="active" onclick="window.location.href='car.html'">
+        🚗 <span>Car</span>
+    </button>
+
+    <button onclick="window.location.href='profile.html'">
+        👤 <span>Profile</span>
+    </button>
+</div>
+</body>
+</html>

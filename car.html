@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Travel Drive - Car Rental</title>
+<link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+<div class="app">
+
+    <!-- HEADER -->
+    <div class="top-bar">
+        <div class="logo">Travel Drive</div>
+        <div class="subtitle">Find the perfect car for your trip</div>
+    </div>
+
+    <!-- MAP -->
+    <div class="fake-map">
+        <img src="map.png" alt="Map">
+
+        <div class="map-overlay"></div>
+
+        <div class="marker">🚗</div>
+
+        <div class="map-controls">
+            <button>+</button>
+            <button>−</button>
+        </div>
+    </div>
+
+    <!-- CAR RENTAL SECTION -->
+    <div class="hotel-section">
+        <div class="section-title">
+            <h2>Car Rental Services in Tha Sala</h2>
+        </div>
+
+        <!-- Car 1 -->
+        <div class="hotel-card">
+            <div class="hotel-img">
+                <img src="https://images.unsplash.com/photo-1502877338535-766e1452684a">
+                <span class="rating">4.8 ⭐</span>
+            </div>
+            <div class="hotel-info">
+                <h3>Tha Sala Car Rental</h3>
+                <p>Toyota Yaris • Automatic • 5 Seats</p>
+                <div class="bottom">
+            
+                           <button onclick="window.location.href='detail.html'">Book Now</button>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Car 2 -->
+        <div class="hotel-card">
+            <div class="hotel-img">
+                <img src="https://images.unsplash.com/photo-1493238792000-8113da705763">
+                <span class="rating">4.6 ⭐</span>
+            </div>
+            <div class="hotel-info">
+                <h3>Walailak Drive Service</h3>
+                <p>Honda City • Automatic • 5 Seats</p>
+                <div class="bottom">
+
+                                      <button onclick="window.location.href='detail.html'">Book Now</button>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Car 3 -->
+        <div class="hotel-card">
+            <div class="hotel-img">
+                <img src="https://images.unsplash.com/photo-1553440569-bcc63803a83d">
+                <span class="rating">4.9 ⭐</span>
+            </div>
+            <div class="hotel-info">
+                <h3>Premium SUV Rental</h3>
+                <p>Ford Everest • Automatic • 7 Seats</p>
+                <div class="bottom">
+    
+                    <button onclick="window.location.href='detail.html'">Book Now</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script src="main.js"></script>
+
+<!-- Navbar -->
+<div class="navbar">
+    <button onclick="window.location.href='mainCus.html'">
+        🗺️ <span>Hotel</span>
+    </button>
+
+    <button class="active" onclick="window.location.href='car.html'">
+        🚗 <span>Car</span>
+    </button>
+
+    <button onclick="window.location.href='profile.html'">
+        👤 <span>Profile</span>
+    </button>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,420 @@
+/* =========================
+   BASE / MOBILE-FIRST
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: #f1f3f8;
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* =========================
+   HEADER
+========================= */
+.top-bar {
+    background: linear-gradient(135deg, #4e73df, #1cc88a);
+    padding: 20px 15px 30px 15px;
+    color: white;
+    text-align: center;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.top-bar h1, .logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.subtitle {
+    font-size: 14px;
+    opacity: 0.9;
+    margin-top: 5px;
+}
+
+.top-bar input {
+    width: 100%;
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    margin-top: 10px;
+}
+
+/* =========================
+   FAKE MAP
+========================= */
+.fake-map {
+    position: relative;
+    margin: 20px 15px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+    height: 200px;
+}
+
+.fake-map img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.map-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.05);
+}
+
+.marker {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 28px;
+}
+
+.map-controls {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.map-controls button {
+    background: white;
+    border: none;
+    padding: 6px 10px;
+    margin-bottom: 5px;
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+    font-weight: bold;
+}
+
+/* =========================
+   HOTEL LIST
+========================= */
+.hotel-section {
+    flex: 1;
+    overflow-y: auto;
+    padding: 0 15px 15px 15px;
+    margin-bottom: 40px;
+
+}
+
+.section-title {
+    margin-bottom: 15px;
+}
+
+/* HOTEL CARD */
+.hotel-card {
+    background: white;
+    border-radius: 18px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.hotel-card:hover {
+    transform: translateY(-5px);
+}
+
+.hotel-img {
+    position: relative;
+}
+
+.hotel-img img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.rating {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: #ff9800;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 13px;
+}
+
+.hotel-info {
+    padding: 15px;
+    
+    
+}
+
+.hotel-info h3 {
+    margin-bottom: 5px;
+}
+
+.hotel-info p {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price {
+    font-weight: bold;
+    color: #1a73e8;
+}
+
+button {
+    background: #1a73e8;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1558c0;
+}
+
+.navbar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    box-shadow: 0 -3px 10px rgba(0,0,0,0.1);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    z-index: 15;
+}
+
+.navbar button {
+    background: none;
+    border: none;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    color: #666;
+    transition: 0.3s;
+}
+
+.navbar button span {
+    font-size: 12px;
+    margin-top: 3px;
+}
+
+.navbar button.active {
+    color: #1a73e8;
+}
+
+.navbar button:hover {
+    color: #1a73e8;
+}
+
+/* ================= PROFILE PAGE ================= */
+
+.profile-section {
+    padding: 20px;
+}
+
+.profile-card {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.avatar {
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+.form-group {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+}
+
+.save-btn {
+    width: 100%;
+    padding: 10px;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.save-btn:hover {
+    opacity: 0.8;
+}
+
+.social-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.facebook-btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background: #1877f2;
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.facebook-btn:hover {
+    opacity: 0.8;
+}
+
+/* =========================
+   DESKTOP VERSION
+========================= */
+@media (min-width: 768px) {
+
+.navbar {
+    position: static;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* ทำให้ปุ่มอยู่ตรงกลาง */
+    width: auto;
+    padding: 0;
+    box-shadow: none;
+    border-radius: 0;
+    margin: 0; /* ลบ margin-right เดิม */
+}
+
+.navbar button {
+    font-size: 16px;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 10px; /* กำหนด spacing ซ้ายขวา */
+}
+
+.navbar button span {
+    margin-left: 5px;
+    font-size: 14px;
+    margin-top: 0;
+}
+ .app {
+        flex-direction: row;
+        height: 100vh;
+        gap: 20px; /* เพิ่ม spacing */
+        padding: 20px;
+    }
+
+    /* HEADER กลายเป็น Top Fixed */
+    .top-bar {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        padding: 20px 15px 30px 15px;
+        border-radius: 0 0 25px 25px;
+    }
+
+    body {
+        padding-top: 90px;
+    }
+
+    /* Map ฝั่งซ้าย */
+    .fake-map {
+        width: 60%;
+        height: calc(80vh - 40px); /* ลด padding ของ app */
+        position: sticky;
+        top: 20px;
+        align-self: flex-start;
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+    }
+
+    .hotel-section {
+        width: 40%;
+        height: 100vh; /* ต้องสูงเท่ากับ app */
+        overflow-y: auto; /* scroll ฝั่งขวา */
+        padding: 20px;
+    }
+
+    .fake-map img {
+        height: 100%;
+    }
+       .profile-section {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 40px 20px;
+    }
+
+    .profile-card {
+        width: 450px;
+        max-width: 100%;
+    }
+
+    .avatar {
+        font-size: 80px;
+        margin-bottom: 20px;
+    }
+
+    .form-group input {
+        padding: 12px;
+        font-size: 15px;
+    }
+
+    .save-btn {
+        padding: 14px;
+        font-size: 16px;
+        border-radius: 12px;
+    }
+
+    .social-section {
+        margin-top: 30px;
+    }
+
+    .facebook-btn {
+        padding: 12px 20px;
+        font-size: 15px;
+        border-radius: 12px;
+    }
+
+   
+}
